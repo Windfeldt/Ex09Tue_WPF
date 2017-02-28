@@ -13,26 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ex09Tue_WPF
+namespace Ex09Tue_WPF_Exercise_3.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for OrangeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OrangeView : UserControl
     {
-        public MainWindow()
+        public OrangeView()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickP1(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page1();
-        }
-
-        private void BtnClickP2(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page2();
         }
     }
 }

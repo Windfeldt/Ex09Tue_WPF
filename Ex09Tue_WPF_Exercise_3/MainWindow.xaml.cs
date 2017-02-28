@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ex09Tue_WPF_Exercise_3.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ex09Tue_WPF
+namespace Ex09Tue_WPF_Exercise_3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,14 +26,19 @@ namespace Ex09Tue_WPF
             InitializeComponent();
         }
 
-        private void BtnClickP1(object sender, RoutedEventArgs e)
+        private void RedView_Clicked(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Page1();
+            DataContext = new RedViewModel();
         }
 
-        private void BtnClickP2(object sender, RoutedEventArgs e)
+        private void BlueView_Clicked(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Page2();
+            DataContext = new BlueViewModel();
+        }
+
+        private void OrangeView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new OrangeViewModel();
         }
     }
 }

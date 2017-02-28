@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace Ex09Tue_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page2 : Page
     {
-        public MainWindow()
+        public Page2()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickP1(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page1();
-        }
-
-        private void BtnClickP2(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page2();
         }
     }
 }
